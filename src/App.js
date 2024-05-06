@@ -6,7 +6,7 @@ import React, { useState } from "react";
 function App() {
   const [mode, setMode] = useState("light");
   const toggleMode = () => {
-    if (mode == "light") {
+    if (mode ==="light") {
       setMode("dark");
       document.body.style.backgroundColor = "#333333";
       document.body.style.color = "#E0E0E0";
