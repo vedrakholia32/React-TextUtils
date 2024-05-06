@@ -38,23 +38,30 @@ export default function TextForm(props) {
             className="form-control"
             value={text}
             style={{
-              backgroundColor: props.mode === "light" ? "white" : "grey",
-              color: props.mode === "dark" ? "white" : "black",
+              backgroundColor: props.mode === "light" ? "white" : "lightgrey",
+              color: props.mode === "dark" ? "lightblack" : "black",
             }}
             onChange={handleOnChange}
             id="exampleFormControlTextarea1"
             rows="8"
           ></textarea>
         </div>
-        <button className="btn btn-primary mx-2" onClick={handleUpClick}>
+        <button className="btn btn-primary mx-2 border-0" onClick={handleUpClick} style={{
+          backgroundColor: props.mode === "light" ? " #5481FF" : "grey",
+        
+        }}>
           Convert to Uppercase
         </button>
 
-        <button className="btn btn-primary" onClick={handleLoClick}>
+        <button className="btn btn-primary border-0" onClick={handleLoClick} style={{
+          backgroundColor: props.mode === "light" ? " #5481FF" : "grey",
+        }}>
           Convert to Lowercase
         </button>
 
-        <button className="btn btn-primary mx-2 my-2" onClick={handleClearText}>
+        <button className="btn btn-primary mx-2 my-2 border-0" onClick={handleClearText} style={{
+          backgroundColor: props.mode === "light" ? " #5481FF" : "grey",
+        }}>
           Clear Text
         </button>
       </div>
